@@ -1,4 +1,8 @@
-const brackets = (position) =>
+interface Props {
+  position: "left" | "right";
+}
+
+const brackets = ({ position }: Props) =>
   position === "left" ? (
     <svg
       width="5"
